@@ -14,6 +14,22 @@
     <%= render 'layouts/header' %>
 
     <div class="container">
+    
+      <!--
+      sempre que tiver mensagens de flash, esse bloco abaixo vai ajudar bastante e no controller
+      coloca a mensagem desejada. No caso do users_controller vai a mensagem de sucesso no método
+      create >>> flash[:success]
+      -->
+
+      <% flash.each do |message_type, message| %>
+        <%= content_tag 'div', class: "alert alert-#{message_type} alert-dismissible", role: 'alert' do %>
+          <button type="button" class="close" data-dismiss="alert" aria-label="close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <%= message %>
+        <% end %>
+      <% end %>
+
       <%= yield %>
 
       <%= render 'layouts/footer' %>
