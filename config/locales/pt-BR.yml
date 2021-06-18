@@ -1,0 +1,21 @@
+# cria esse arquivo para fazer a tradução da aplicação para o português do brasil - pt-BR.yml
+
+pt-BR:
+  hello: 'Olá mundo!'
+
+  activerecord:
+    attributes: 
+      user: 
+        name: 'Nome'
+        email: 'Email'
+        password: 'Senha'
+        password_confirmation: 'Confirmação de senha'
+
+    errors:
+      messages: 
+        blank: 'não pode estar em branco.'
+        invalid: 'inválido.'
+        taken: 'já cadastrado.'
+        confirmation: 'Insira a mesma senha.'
+        too_long: ' Muito grande. Deve ter no máximo %{count} caracteres.'  # não entendi porque aqui é %{} e não #{} 
+        too_short: 'muito curta. Deve ter no mínio %{count} caratcteres.'

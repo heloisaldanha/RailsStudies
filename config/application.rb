@@ -11,6 +11,9 @@ module Agendinha
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
 
+    config.i18n.default_locale = :'pt-BR'  # lembrar de configurar isso aqui para poder ativar a internacionalização da aplicação
+    # tem que ser entre aspas o pt-br
+
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
