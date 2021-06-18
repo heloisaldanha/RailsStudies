@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get 'novo_contato', to: 'static_pages#novo_contato'
   get 'entrar', to: 'sessions#new'
   post 'entrar', to: 'sessions#create'
+  delete 'sair', to: 'sessions#destroy'
   # para visuzlizar as rotas disponíveis na aplicação : rails routes
 
 
