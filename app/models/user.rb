@@ -14,4 +14,8 @@ class User < ApplicationRecord
                                       format: { with: VALID_EMAIL_REGEX },
                                       uniqueness: { case_sensitive: true }  # verificar se a string está em caixa alta ou cx baixa
                                       
+    
+                                      
+    # a classe usuário TEM MUITOS CONTATOSSSS
+    has_many :contacts  # observe que essa classe vem no plural
 end
