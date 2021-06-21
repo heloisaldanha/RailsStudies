@@ -18,5 +18,6 @@ Rails.application.routes.draw do
   # permite que você rapidamente declare todas as rotas comuns para um controller.
   # uma chamada única para resources pode declarar todas as rotas necessárias para as actions index, show, new, edit, create, update e destroy.
   resources :contacts
-  resources :users, only: [:new, :create, :show]  # como é a rota de cadastro, só pode ter acesso à rota new e create - e pra mostrar = :show
+  resources :users, only: [:new, :create, :show, :edit, :update]  # como é a rota de cadastro, só pode ter acesso à rota new e create - e pra mostrar = :show
+  # não tem a rota de destroy pois não fiz pra deletar usuário
 end
